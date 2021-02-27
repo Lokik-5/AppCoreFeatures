@@ -1,16 +1,23 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.AppCoreFeatures" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+<resources>
+
+    <!-- Base theme, all common styling here i.e settings applies to all theme. -->
+    <style name="Base.Theme.AppCoreFeatures" parent="Theme.Core.DayNight">
+        <!-- Customize your app theme here. -->
+
+        <item name="sliderStyle">@style/Widget.Core.Slider.Fancy</item>
     </style>
+
+    <style name="Theme.AppCoreFeatures.DayNight" parent="Base.Theme.AppCoreFeatures"/>
+
+
+    <!-- ====== Different themes that can be used by app. -->
+
+    <!-- Top level DayNight theme. -->
+    <style name="Theme.AppCoreFeatures.DayNight.YourThemeName">
+        <!-- Material color attributes (light theme). -->
+
+        <!-- TODO:- Define your app light theme here. -->
+
+    </style>
+
 </resources>
