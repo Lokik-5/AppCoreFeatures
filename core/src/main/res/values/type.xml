@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Typography. -->
+
+    <!-- Material’s type system supports 13 categories that, when combined, form the typeScale.
+         This typeScale is evident in the variety of text styles and sizes that appear on screen,
+         ranging from body copy to buttons. Type appears across the UI, in places such as in
+         components and on surfaces.
+
+         These styles should be used throughout your app when creating text views so all your
+         text is consistently styled and easily updated if design or product needs change. Each
+         style in the type scale can be customized by defining a style and overriding that
+         style's Material Theme attribute (?textAppearanceHeadline1, ?textAppearanceBody2, etc.)
+         in your app's theme. In this project, type attributes have already been overridden in
+         themes.xml and are set to the styles in this file, type.xml. These ?textAppearance*
+         theme attributes should be used in your layouts to set a TextView’s appearance instead
+         of fully qualified style references and in favor of manually setting text properties.
+
+         Type on Android is themed by defining a custom TextAppearance for each type scale style.
+         Use standard TextAppearance attributes such as textSize, textColor, fontFamily,
+         letterSpacing, etc. to define a custom appearance for each and see how they are
+         applied globally across your app. -->
+
+    <!-- ==================== Typo for headings. ====================-->
+
+    <style name="TextAppearance.Core.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/open_sans_light</item>    <!-- light weight. -->
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:textSize">95sp</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <style name="TextAppearance.Core.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/open_sans_light</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+        <item name="android:textSize">59sp</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <style name="TextAppearance.Core.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/open_sans</item>      <!-- Regular weight -->
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <style name="TextAppearance.Core.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <style name="TextAppearance.Core.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <style name="TextAppearance.Core.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/open_sans_semibold</item>     <!-- Medium weight -->
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <!-- =================== Typo for subheadings. =================== -->
+
+    <style name="TextAppearance.Core.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <style name="TextAppearance.Core.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/open_sans_semibold</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <!-- =================== Typo for multiline body text. =================== -->
+
+    <style name="TextAppearance.Core.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <style name="TextAppearance.Core.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <!-- Typo for buttons also maps to parts of other components like tabs and dialog actions.-->
+    <style name="TextAppearance.Core.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/open_sans_semibold</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <!-- Typo for smaller text like text field hints and errors. -->
+    <style name="TextAppearance.Core.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <!-- Typo for smaller text but capitalization and increased letter spacing make it
+         suitable for small titles and labels like date picker headers. -->
+    <style name="TextAppearance.Core.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/color_on_surface_emphasis_high</item>
+    </style>
+
+    <!-- Typo for slider tooltip. -->
+    <style name="TextAppearance.Core.Tooltip" parent="TextAppearance.Core.Body2">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============== MaterialButton style. ================ -->
+
+    <!-- Button base style. -->
+    <style name="Base.Widget.Core.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/btn_stroke_color_selector</item>
+    </style>
+
+    <!-- OutlinedButton style. -->
+    <style name="Widget.Core.Button.OutlinedButton" parent="Base.Widget.Core.Button"/>
+
+    <!-- OutlinedButton with icon style. -->
+    <style name="Widget.Core.Button.OutlinedButton.WithIcon">
+        <item name="android:paddingLeft">@dimen/padding_style_btn</item>
+    </style>
+
+    <!-- OutlineButton with icon only style. -->
+    <style name="Widget.Core.Button.OutlinedButton.IconOnly" parent="Base.Widget.Core.Button">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">@dimen/padding_style_btn</item>
+        <item name="android:paddingRight">@dimen/padding_style_btn</item>
+        <item name="android:minWidth">@dimen/size_style_btn</item>
+        <item name="android:minHeight">@dimen/size_style_btn</item>
+    </style>
+
+    <!-- ============== MaterialCardView style. ================ -->
+
+    <!-- CardView base style. -->
+    <style name="Base.Widget.Core.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeWidth">@dimen/stroke_style_medium</item>
+        <item name="strokeColor">@color/card_stroke_color_selector</item>
+        <item name="cardElevation">0dp</item>   <!-- Recommended for outlinedCardView. -->
+    </style>
+
+    <!-- OutlinedCardView style. -->
+    <style name="Widget.Core.CardView.OutlinedCardView" parent="Base.Widget.Core.CardView"/>
+
+    <!-- CheckedCardView style. -->
+    <style name="Widget.Core.CardView.CheckedCardView" parent="Base.Widget.Core.CardView">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:checkable">true</item>
+    </style>
+
+    <!-- ============== ImageView style. ================ -->
+
+    <!-- CircleImageView style. -->
+    <style name="Widget.Core.CircleImageView" parent="">
+        <item name="strokeWidth">@dimen/stroke_style_medium</item>
+        <item name="android:padding">0.5dp</item>  <!-- Always half of strokeWidth. -->
+        <item name="strokeColor">@color/color_on_surface_emphasis_disabled</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Core.CircularEdges</item>
+    </style>
+
+    <!-- ================ Slider style. ================== -->
+
+    <!-- TODO:- On updates of material lib. check for attributes that are not working currently
+            in version "1.3.0" like android:valueType if valueType work in future no need
+            to use stepSize -->
+    <!-- Slider style. -->
+    <style name="Widget.Core.Slider" parent="Widget.MaterialComponents.Slider">
+        <item name="android:valueFrom">0</item>
+        <item name="android:valueTo">100</item>
+        <item name="android:stepSize">1</item>
+        <item name="tickVisible">false</item>
+        <item name="thumbStrokeWidth">@dimen/stroke_style_medium</item>
+        <item name="thumbStrokeColor">@color/color_on_surface_emphasis_disabled</item>
+        <item name="thumbRadius">12dp</item>
+        <item name="thumbElevation">@dimen/plane_04</item>
+        <item name="labelStyle">@style/Widget.Core.Tooltip.Box</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Core.Slider</item>
+    </style>
+
+    <!-- Fancy slider style. -->
+    <style name="Widget.Core.Slider.Fancy">
+        <item name="labelStyle">@style/Widget.Core.Tooltip.Capsule</item>
+    </style>
+
+    <!-- ================= Tooltip style. =================== -->
+
+    <!-- Tooltip base style. -->
+    <style name="Base.Widget.Core.Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/TextAppearance.Core.Tooltip</item>
+    </style>
+
+    <!-- Box shaped tooltip style. -->
+    <style name="Widget.Core.Tooltip.Box" parent="Base.Widget.Core.Tooltip"/>
+
+    <!-- Capsule shaped tooltip style. -->
+    <style name="Widget.Core.Tooltip.Capsule" parent="Base.Widget.Core.Tooltip">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Core.CircularEdges</item>
+    </style>
+
+
+    <!-- ========= Dimens used by styles. =========== -->
+
+    <dimen name="stroke_style_medium">1dp</dimen>
+    <dimen name="size_style_btn">48dp</dimen>
+    <dimen name="padding_style_btn">12dp</dimen>
+
+</resources>

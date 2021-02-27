@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Top level DayNight theme. -->
+    <style name="Theme.Core.DayNight" parent="Base.Theme.Core"/>
+
+    <!-- Base light theme, all common styling here. -->
+    <style name="Base.Theme.Core" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Material color attributes (light theme). -->
+
+        <!-- colorPrimary colors map to components and elements, such as app bars and buttons.
+             colorSecondary colors are most often used as accents on components, such as FABs
+             and selection controls.
+             colorPrimaryDark colors applied to the status bar (via statusBarColor) and navigation
+             bar (via navigationBarColor).
+             colorPrimaryVariant, colorSecondaryVariant an alternate shade of the colorPrimary
+             and colorSecondary. -->
+        <item name="colorPrimary">@color/green_400</item>
+        <item name="colorPrimaryVariant">@color/green_800</item>
+        <item name="colorPrimaryDark">@color/green_800</item>
+        <item name="colorSecondary">@color/orange_700</item>
+        <item name="colorSecondaryVariant">@color/dark_orange_700</item>
+
+        <!-- colorBackground appears behind scrollable content and is used for the default window
+             background. colorSurface is mapped to the surface of components such as cards, sheets
+             and menus. colorError is used to indicate an error state for components such as
+             text fields. -->
+        <item name="android:colorBackground">@color/white_50</item>
+        <item name="colorSurface">@color/white_50</item>
+        <item name="colorError">@color/red_600</item>
+
+        <!-- "On" colors define how text, icons and strokes are colored in relation to the surface
+             on which they appear. -->
+        <item name="colorOnPrimary">@color/black_900</item>
+        <item name="colorOnSecondary">@color/black_900</item>
+        <item name="colorOnBackground">@color/black_900</item>
+        <item name="colorOnSurface">@color/black_900</item>
+        <item name="colorOnError">@color/white_50</item>
+
+        <!-- Material shape attributes. -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Core.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Core.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Core.LargeComponent</item>
+
+        <!-- Material type attributes (Typography). -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Core.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Core.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Core.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Core.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Core.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Core.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Core.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Core.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Core.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Core.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Core.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Core.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Core.Overline</item>
+
+        <!-- Alpha variants. -->
+        <item name="emphasisHighAlpha">0.87</item>
+        <item name="emphasisMediumAlpha">0.60</item>
+        <item name="emphasisDisabledAlpha">0.38</item>
+
+        <!-- Component styles. -->
+        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+        <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
+        <item name="sliderStyle">@style/Widget.Core.Slider</item>
+
+        <!-- System/Platform attributes. -->
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <!-- Slider base theme. -->
+    <style name="Base.ThemeOverlay.Core.Slider" parent="">
+        <!-- Slider tick color when enabled, text color on slider label. -->
+        <item name="colorOnPrimary">@color/white_50</item>
+        <!-- Slider label back color. -->
+        <item name="backgroundTint">@color/black_900</item>
+    </style>
+
+    <!-- Top level slider light theme. -->
+    <style name="ThemeOverlay.Core.Slider" parent="Base.ThemeOverlay.Core.Slider"/>
+
+</resources>

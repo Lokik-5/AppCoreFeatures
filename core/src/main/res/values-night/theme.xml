@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Top level DayNight theme. -->
+    <style name="Theme.Core.DayNight" parent="Base.Theme.Core.Dark"/>
+
+    <!-- Base dark theme, all common styling here. -->
+    <style name="Base.Theme.Core.Dark" parent="Base.Theme.Core">
+
+        <!-- Material color attributes (dark theme). -->
+
+        <!-- colorPrimary colors map to components and elements, such as app bars and buttons.
+             colorSecondary colors are most often used as accents on components, such as FABs
+             and selection controls.
+             colorPrimaryDark colors applied to the status bar (via statusBarColor) and navigation
+             bar (via navigationBarColor).
+             colorPrimaryVariant, colorSecondaryVariant an alternate shade of the colorPrimary
+             and colorSecondary. -->
+        <item name="colorPrimary">@color/green_300</item>
+        <item name="colorPrimaryVariant">@color/green_800</item>
+        <item name="colorPrimaryDark">@color/black_800</item>
+        <item name="colorSecondary">@color/orange_300</item>
+        <item name="colorSecondaryVariant">@color/orange_300</item>
+
+        <!-- colorBackground appears behind scrollable content and is used for the default window
+             background. colorSurface is mapped to the surface of components such as cards, sheets
+             and menus. colorError is used to indicate an error state for components such as
+             text fields. -->
+        <item name="android:colorBackground">@color/black_900</item>
+        <item name="colorSurface">@color/black_800</item>
+        <item name="colorError">@color/red_200</item>
+
+        <!-- "On" colors define how text, icons and strokes are colored in relation to the surface
+             on which they appear. -->
+        <item name="colorOnPrimary">@color/black_900</item>
+        <item name="colorOnSecondary">@color/black_900</item>
+        <item name="colorOnBackground">@color/white_50</item>
+        <item name="colorOnSurface">@color/white_50</item>
+        <item name="colorOnError">@color/black_900</item>
+
+        <!-- System/Platform attributes. -->
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+    <!-- Top level slider dark theme. -->
+    <style name="ThemeOverlay.Core.Slider" parent="Base.ThemeOverlay.Core.Slider">
+        <!-- Slider label back color. -->
+        <item name="backgroundTint">@color/black_800</item>
+    </style>
+
+</resources>

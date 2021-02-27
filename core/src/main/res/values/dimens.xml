@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens resource used for changing the view size. -->
+
+    <!-- Divider height variants. -->
+    <dimen name="height_all_divider_0_5">0.5dp</dimen>
+    <dimen name="height_all_divider_1">1dp</dimen>
+
+    <!-- 5% table. -->
+    <item name="guide_percent_5" type="integer" format="float">0.05</item>
+    <item name="guide_percent_10" type="integer" format="float">0.10</item>
+    <item name="guide_percent_15" type="integer" format="float">0.15</item>
+    <item name="guide_percent_20" type="integer" format="float">0.20</item>
+    <item name="guide_percent_25" type="integer" format="float">0.25</item>
+    <item name="guide_percent_30" type="integer" format="float">0.30</item>
+    <item name="guide_percent_35" type="integer" format="float">0.35</item>
+    <item name="guide_percent_40" type="integer" format="float">0.40</item>
+    <item name="guide_percent_45" type="integer" format="float">0.45</item>
+    <item name="guide_percent_50" type="integer" format="float">0.50</item>
+    <item name="guide_percent_55" type="integer" format="float">0.55</item>
+    <item name="guide_percent_60" type="integer" format="float">0.60</item>
+    <item name="guide_percent_65" type="integer" format="float">0.65</item>
+    <item name="guide_percent_70" type="integer" format="float">0.70</item>
+    <item name="guide_percent_75" type="integer" format="float">0.75</item>
+    <item name="guide_percent_80" type="integer" format="float">0.80</item>
+    <item name="guide_percent_85" type="integer" format="float">0.85</item>
+    <item name="guide_percent_90" type="integer" format="float">0.90</item>
+    <item name="guide_percent_95" type="integer" format="float">0.95</item>
+
+
+    <!-- 8dp grid system. Smaller components can align to a 2dp 'sub' grid. -->
+
+    <!-- 2dp sub grid. -->
+    <dimen name="grid_0_25">2dp</dimen>
+    <dimen name="grid_0_5">4dp</dimen>
+
+    <!-- 8dp grid. -->
+    <dimen name="grid_1">8dp</dimen>
+    <dimen name="grid_1_5">12dp</dimen>
+    <dimen name="grid_2">16dp</dimen>
+    <dimen name="grid_3">24dp</dimen>
+    <dimen name="grid_4">32dp</dimen>
+
+</resources>
