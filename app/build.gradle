@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion           androidCompileSdkVersion
+    buildToolsVersion           androidBuildToolsVersion
+
+    defaultConfig {
+        applicationId           "com.app.appcorefeatures"
+        minSdkVersion           androidMinSdkVersion
+        targetSdkVersion        androidTargetSdkVersion
+        versionCode             1
+        versionName             "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled       true    // shrink
+            useProguard         false   // don't obfuscate
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled       true    // shrink
+            useProguard         true    // obfuscate
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    // Modules
+    implementation          libs.core
+
+    // Android libs
+    implementation          libs.constraintLayout
+
+    // Test libs
+    testImplementation        testLibs.junit
+    androidTestImplementation testLibs.extJunit
+    androidTestImplementation testLibs.espressoCore
+}
