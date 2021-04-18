@@ -47,6 +47,8 @@ dependencies {
     // JetPack libs
     api         libs.appCompat
     api         libs.coreKtx
+    api         libs.activity
+    api         libs.fragment
 
     // Material lib
     api         libs.material
