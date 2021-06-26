@@ -24,23 +24,40 @@
     <!-- ============================== Round shapes. ================================= -->
 
     <!-- Shape Appearance for small components like chips, buttons, text fields and FABs. -->
-    <style name="ShapeAppearance.Core.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
-        <item name="cornerFamily">rounded</item>
+    <style name="ShapeAppearance.Core.SmallComponent.Round" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
     </style>
 
     <!-- Shape Appearance for medium components like cards, alert dialogs. -->
-    <style name="ShapeAppearance.Core.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
-        <item name="cornerFamily">rounded</item>
+    <style name="ShapeAppearance.Core.MediumComponent.Round" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
     </style>
 
     <!-- Shape Appearance for large components like side and bottom navigation drawers. -->
-    <style name="ShapeAppearance.Core.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
-        <item name="cornerFamily">rounded</item>
+    <style name="ShapeAppearance.Core.LargeComponent.Round" parent="ShapeAppearance.MaterialComponents.LargeComponent">
         <item name="cornerSize">@dimen/large_component_corner_round_radius</item>
     </style>
 
+
+    <!-- ============================== Cut shapes. ================================= -->
+
+    <!-- Shape Appearance for small components like chips, buttons, text fields and FABs. -->
+    <style name="ShapeAppearance.Core.SmallComponent.Cut" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    </style>
+
+    <!-- Shape Appearance for medium components like cards, alert dialogs. -->
+    <style name="ShapeAppearance.Core.MediumComponent.Cut" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    </style>
+
+    <!-- Shape Appearance for large components like side and bottom navigation drawers. -->
+    <style name="ShapeAppearance.Core.LargeComponent.Cut" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">@dimen/large_component_corner_cut_radius</item>
+    </style>
 
     <!-- =============== Base round shapes. ================= -->
 

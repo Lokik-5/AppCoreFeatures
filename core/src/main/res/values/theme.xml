@@ -39,9 +39,9 @@
         <item name="colorOnError">@color/white_50</item>
 
         <!-- Material shape attributes. -->
-        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Core.SmallComponent</item>
-        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Core.MediumComponent</item>
-        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Core.LargeComponent</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Core.SmallComponent.Round</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Core.MediumComponent.Round</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Core.LargeComponent.Round</item>
 
         <!-- Material type attributes (Typography). -->
         <item name="textAppearanceHeadline1">@style/TextAppearance.Core.Headline1</item>
