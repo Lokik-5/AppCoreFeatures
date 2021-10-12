@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- attrs resource used for defining custom attributes. -->
+    <!-- Attrs resource used for defining custom attributes. -->
 
     <!-- Emphasis values are used in combination with each "on" color to create three available
          levels of emphasis for text and content.-->

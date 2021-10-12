@@ -45,8 +45,10 @@
 
     <!-- Top level slider dark theme. -->
     <style name="ThemeOverlay.Core.Slider" parent="Base.ThemeOverlay.Core.Slider">
+        <!-- Slider tick color when enabled, text color on slider label. -->
+        <item name="colorOnPrimary">@color/black_800</item>
         <!-- Slider label back color. -->
-        <item name="backgroundTint">@color/black_800</item>
+        <item name="backgroundTint">@color/white_50</item>
     </style>
 
 </resources>

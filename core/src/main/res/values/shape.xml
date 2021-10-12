@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Shape. -->
+    <!-- Shapes. -->
 
     <!-- Material allows theme of a component’s shape through the customization of corner
          style and radius size. To systematically apply shape throughout your app, it helps
@@ -38,7 +38,6 @@
         <item name="cornerSize">@dimen/large_component_corner_round_radius</item>
     </style>
 
-
     <!-- ============================== Cut shapes. ================================= -->
 
     <!-- Shape Appearance for small components like chips, buttons, text fields and FABs. -->
@@ -59,387 +58,277 @@
         <item name="cornerSize">@dimen/large_component_corner_cut_radius</item>
     </style>
 
-    <!-- =============== Base round shapes. ================= -->
-
-    <!-- All corners round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round" parent="">
-        <item name="cornerFamily">rounded</item>
-    </style>
-
-    <!-- Top(left/right) corners round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Top">
-        <item name="cornerSizeBottomLeft">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
-
-    <!-- Bottom(left/right) corners round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Bottom">
-        <item name="cornerSizeTopLeft">0dp</item>
-        <item name="cornerSizeTopRight">0dp</item>
-    </style>
-
-    <!-- Left(top/bottom) corners round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Left">
-        <item name="cornerSizeTopRight">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
-
-    <!-- Right(top/bottom) corners round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Right">
-        <item name="cornerSizeTopLeft">0dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-    </style>
-
-    <!-- Top left corner round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Top.Left">
-        <item name="cornerSizeTopRight">0dp</item>
-    </style>
-
-    <!-- Top right corner round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Top.Right">
-        <item name="cornerSizeTopLeft">0dp</item>
-    </style>
-
-    <!-- Bottom left corner round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Bottom.Left">
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
-
-    <!-- Bottom right corner round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.Bottom.Right">
-        <item name="cornerSizeBottomLeft">0dp</item>
-    </style>
-
-    <!-- Top left & bottom right corners round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.TopLeftBottomRight">
-        <item name="cornerSizeTopRight">0dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-    </style>
-
-    <!-- Top right & bottom left corners round. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Round.TopRightBottomLeft">
-        <item name="cornerSizeTopLeft">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
-
     <!-- ======= SmallComponent round shapeAppearanceOverlay. ========= -->
 
     <!-- All corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round" parent="Base.ShapeAppearanceOverlay.Core.Round">
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round" parent="ShapeAppearance.Core.SmallComponent.Round">
         <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
     </style>
 
     <!-- Top(left/right) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Top" parent="Base.ShapeAppearanceOverlay.Core.Round.Top">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Top">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom(left/right) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Bottom" parent="Base.ShapeAppearanceOverlay.Core.Round.Bottom">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Bottom">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Left(top/bottom) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Left" parent="Base.ShapeAppearanceOverlay.Core.Round.Left">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Left">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Right(top/bottom) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Right" parent="Base.ShapeAppearanceOverlay.Core.Round.Right">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Top.Left" parent="Base.ShapeAppearanceOverlay.Core.Round.Top.Left">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Top.Left">
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Top right corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Top.Right" parent="Base.ShapeAppearanceOverlay.Core.Round.Top.Right">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Top.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
     </style>
 
     <!-- Bottom left corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Bottom.Left" parent="Base.ShapeAppearanceOverlay.Core.Round.Bottom.Left">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Bottom.Left">
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom right corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Bottom.Right" parent="Base.ShapeAppearanceOverlay.Core.Round.Bottom.Right">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.Bottom.Right">
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left & bottom right corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.TopLeftBottomRight" parent="Base.ShapeAppearanceOverlay.Core.Round.TopLeftBottomRight">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.TopLeftBottomRight">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top right & bottom left corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.TopRightBottomLeft" parent="Base.ShapeAppearanceOverlay.Core.Round.TopRightBottomLeft">
-        <item name="cornerSize">@dimen/small_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Round.TopRightBottomLeft">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
-
-    <!-- ========== MediumComponent round shapeAppearanceOverlay. ============= -->
+    <!-- ======= MediumComponent round shapeAppearanceOverlay. ========= -->
 
     <!-- All corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round" parent="Base.ShapeAppearanceOverlay.Core.Round">
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round" parent="ShapeAppearance.Core.MediumComponent.Round">
         <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
     </style>
 
     <!-- Top(left/right) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Top" parent="Base.ShapeAppearanceOverlay.Core.Round.Top">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Top">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom(left/right) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Bottom" parent="Base.ShapeAppearanceOverlay.Core.Round.Bottom">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Bottom">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Left(top/bottom) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Left" parent="Base.ShapeAppearanceOverlay.Core.Round.Left">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Left">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Right(top/bottom) corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Right" parent="Base.ShapeAppearanceOverlay.Core.Round.Right">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Top.Left" parent="Base.ShapeAppearanceOverlay.Core.Round.Top.Left">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Top.Left">
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Top right corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Top.Right" parent="Base.ShapeAppearanceOverlay.Core.Round.Top.Right">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Top.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
     </style>
 
     <!-- Bottom left corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Bottom.Left" parent="Base.ShapeAppearanceOverlay.Core.Round.Bottom.Left">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Bottom.Left">
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom right corner round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Bottom.Right" parent="Base.ShapeAppearanceOverlay.Core.Round.Bottom.Right">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.Bottom.Right">
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left & bottom right corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.TopLeftBottomRight" parent="Base.ShapeAppearanceOverlay.Core.Round.TopLeftBottomRight">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.TopLeftBottomRight">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top right & bottom left corners round. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.TopRightBottomLeft" parent="Base.ShapeAppearanceOverlay.Core.Round.TopRightBottomLeft">
-        <item name="cornerSize">@dimen/medium_component_corner_round_radius</item>
-    </style>
-
-
-    <!-- ============================ Cut shapes. ================================ -->
-
-    <!-- Shape Appearance for large components like side and bottom navigation drawers. -->
-    <style name="ShapeAppearanceOverlay.Core.LargeComponent.Cut" parent="">
-        <item name="cornerFamily">cut</item>
-        <item name="cornerSize">@dimen/large_component_corner_cut_radius</item>
-    </style>
-
-    <!-- =============== Base cut shapes. ================= -->
-
-    <!-- All corners cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut" parent="">
-        <item name="cornerFamily">cut</item>
-    </style>
-
-    <!-- Top(left/right) corners cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Top">
-        <item name="cornerSizeBottomLeft">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
-
-    <!-- Bottom(left/right) corners cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Bottom">
-        <item name="cornerSizeTopLeft">0dp</item>
-        <item name="cornerSizeTopRight">0dp</item>
-    </style>
-
-    <!-- Left(top/bottom) corners cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Left">
-        <item name="cornerSizeTopRight">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
-
-    <!-- Right(top/bottom) corners cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Right">
-        <item name="cornerSizeTopLeft">0dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-    </style>
-
-    <!-- Top left corner cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Top.Left">
-        <item name="cornerSizeTopRight">0dp</item>
-    </style>
-
-    <!-- Top right corner cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Top.Right">
-        <item name="cornerSizeTopLeft">0dp</item>
-    </style>
-
-    <!-- Bottom left corner cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Bottom.Left">
-        <item name="cornerSizeBottomRight">0dp</item>
-    </style>
-
-    <!-- Bottom right corner cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.Bottom.Right">
-        <item name="cornerSizeBottomLeft">0dp</item>
-    </style>
-
-    <!-- Top left & bottom right corners cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.TopLeftBottomRight">
-        <item name="cornerSizeTopRight">0dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-    </style>
-
-    <!-- Top right & bottom left corners cut. -->
-    <style name="Base.ShapeAppearanceOverlay.Core.Cut.TopRightBottomLeft">
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Round.TopRightBottomLeft">
         <item name="cornerSizeTopLeft">0dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
-
 
     <!-- ======= SmallComponent cut shapeAppearanceOverlay. ========= -->
 
     <!-- All corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut" parent="Base.ShapeAppearanceOverlay.Core.Cut">
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut" parent="ShapeAppearance.Core.SmallComponent.Cut">
         <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
     </style>
 
     <!-- Top(left/right) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Top" parent="Base.ShapeAppearanceOverlay.Core.Cut.Top">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Top">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom(left/right) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Bottom" parent="Base.ShapeAppearanceOverlay.Core.Cut.Bottom">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Bottom">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Left(top/bottom) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Left" parent="Base.ShapeAppearanceOverlay.Core.Cut.Left">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Left">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Right(top/bottom) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Right" parent="Base.ShapeAppearanceOverlay.Core.Cut.Right">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Top.Left" parent="Base.ShapeAppearanceOverlay.Core.Cut.Top.Left">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Top.Left">
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Top right corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Top.Right" parent="Base.ShapeAppearanceOverlay.Core.Cut.Top.Right">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Top.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
     </style>
 
     <!-- Bottom left corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Bottom.Left" parent="Base.ShapeAppearanceOverlay.Core.Cut.Bottom.Left">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Bottom.Left">
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom right corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Bottom.Right" parent="Base.ShapeAppearanceOverlay.Core.Cut.Bottom.Right">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.Bottom.Right">
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left & bottom right corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.TopLeftBottomRight" parent="Base.ShapeAppearanceOverlay.Core.Cut.TopLeftBottomRight">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.TopLeftBottomRight">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top right & bottom left corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.TopRightBottomLeft" parent="Base.ShapeAppearanceOverlay.Core.Cut.TopRightBottomLeft">
-        <item name="cornerSize">@dimen/small_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.SmallComponent.Cut.TopRightBottomLeft">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
-
 
     <!-- ========== MediumComponent cut shapeAppearanceOverlay. ============= -->
 
     <!-- All corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut" parent="Base.ShapeAppearanceOverlay.Core.Cut">
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut" parent="ShapeAppearance.Core.MediumComponent.Cut">
         <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
     </style>
 
     <!-- Top(left/right) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Top" parent="Base.ShapeAppearanceOverlay.Core.Cut.Top">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Top">
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom(left/right) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Bottom" parent="Base.ShapeAppearanceOverlay.Core.Cut.Bottom">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Bottom">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Left(top/bottom) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Left" parent="Base.ShapeAppearanceOverlay.Core.Cut.Left">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Left">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Right(top/bottom) corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Right" parent="Base.ShapeAppearanceOverlay.Core.Cut.Right">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Top.Left" parent="Base.ShapeAppearanceOverlay.Core.Cut.Top.Left">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Top.Left">
+        <item name="cornerSizeTopRight">0dp</item>
     </style>
 
     <!-- Top right corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Top.Right" parent="Base.ShapeAppearanceOverlay.Core.Cut.Top.Right">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Top.Right">
+        <item name="cornerSizeTopLeft">0dp</item>
     </style>
 
     <!-- Bottom left corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Bottom.Left" parent="Base.ShapeAppearanceOverlay.Core.Cut.Bottom.Left">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Bottom.Left">
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 
     <!-- Bottom right corner cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Bottom.Right" parent="Base.ShapeAppearanceOverlay.Core.Cut.Bottom.Right">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.Bottom.Right">
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top left & bottom right corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.TopLeftBottomRight" parent="Base.ShapeAppearanceOverlay.Core.Cut.TopLeftBottomRight">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.TopLeftBottomRight">
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
 
     <!-- Top right & bottom left corners cut. -->
-    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.TopRightBottomLeft" parent="Base.ShapeAppearanceOverlay.Core.Cut.TopRightBottomLeft">
-        <item name="cornerSize">@dimen/medium_component_corner_cut_radius</item>
+    <style name="ShapeAppearanceOverlay.Core.MediumComponent.Cut.TopRightBottomLeft">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
-
 
     <!-- ====================== Unique shapes. ======================= -->
 
     <!-- CircularEdge shapeAppearanceOverlay. -->
-    <style name="ShapeAppearanceOverlay.Core.CircularEdges" parent="Base.ShapeAppearanceOverlay.Core.Round">
+    <style name="ShapeAppearanceOverlay.Core.CircularEdges" parent="">
+        <item name="cornerFamily">rounded</item>
         <item name="cornerSize">@dimen/unique_shape_corner_radius50percent</item>
     </style>
 
     <!-- Leaf shapeAppearanceOverlay. -->
-    <style name="ShapeAppearanceOverlay.Core.Leaf" parent="Base.ShapeAppearanceOverlay.Core.Round.TopRightBottomLeft">
+    <style name="ShapeAppearanceOverlay.Core.Leaf" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerSize">@dimen/unique_shape_corner_radius50percent</item>
     </style>
 
     <!-- Rhombus shapeAppearanceOverlay. -->
-    <style name="ShapeAppearanceOverlay.Core.Rhombus" parent="Base.ShapeAppearanceOverlay.Core.Cut">
+    <style name="ShapeAppearanceOverlay.Core.Rhombus" parent="">
+        <item name="cornerFamily">cut</item>
         <item name="cornerSize">@dimen/unique_shape_corner_radius50percent</item>
     </style>
 

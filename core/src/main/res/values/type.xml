@@ -54,6 +54,7 @@
     <style name="TextAppearance.Core.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="fontFamily">@font/open_sans_semibold</item>     <!-- Medium weight -->
         <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     <!-- =================== Typo for subheadings. =================== -->
@@ -86,7 +87,7 @@
         <item name="android:fontFamily">@font/open_sans_semibold</item>
     </style>
 
-    <!-- Typo for smaller text like text field hints and errors. -->
+    <!-- Typo for smaller text like text field hints and errors and to describe image. -->
     <style name="TextAppearance.Core.Caption" parent="TextAppearance.MaterialComponents.Caption">
         <item name="fontFamily">@font/open_sans</item>
         <item name="android:fontFamily">@font/open_sans</item>

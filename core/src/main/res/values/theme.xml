@@ -64,8 +64,6 @@
         <item name="emphasisDisabledAlpha">0.38</item>
 
         <!-- Component styles. -->
-        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
-        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
         <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
         <item name="sliderStyle">@style/Widget.Core.Slider</item>
 
