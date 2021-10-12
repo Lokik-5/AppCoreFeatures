@@ -3,6 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-    <solid android:color="?attr/colorOnSurface"/>
+    <solid android:color="@color/color_on_surface_emphasis_disabled"/>
 
 </shape>
